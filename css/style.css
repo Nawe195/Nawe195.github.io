@@ -1,0 +1,155 @@
+:root {
+    --negro: #131313;
+    --violetaoscuro: #34005e;
+    --violetaclaro: #5900a1;
+    --blanco: #fff;
+    --gris: #2b2b2b;
+    --grisoscuro: #1f1f1f;
+
+    --fuenteprincipal: 'Roboto', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--negro) ;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Klee One', cursive;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fuenteprincipal);
+
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+
+/** header **/
+.header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__logo {
+    margin: 2rem 0;
+    
+}
+
+/** footer **/
+
+.footer{
+    background-color: #2b2b2b;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.footer__texto{
+    text-align: center;
+
+}
+
+/** navegacion**/
+.navegacion {
+    background-color: var(--gris);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+   /* gap: 2rem; */
+}
+
+.navegacion__enlace {
+    font-family: var(--fuenteprincipal);
+    font-size: 2rem;
+    color: var(--blanco);
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+.navegacion__enlace::after {
+    display: block;
+    content: "";
+    margin: auto;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+.navegacion__enlace:hover::after {
+    width: 100%;
+}
+
+.navegacion__enlace:last-of-type{
+    margin-right: 0;
+    
+}
+
+/** Grid **/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+@media (min-width: 768px) { 
+    .grid {
+     grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/** Productos **/
+
+.producto {
+    background-color: var(--grisoscuro);
+    padding: 1rem;
+    text-align: center;
+}
+.producto__imagen {
+    width: 100%;
+}
+.producto__informacion {
+    
+    
+}
+.producto__nombre {
+
+}
+.producto__precio {
+    text-align: center;
+}
