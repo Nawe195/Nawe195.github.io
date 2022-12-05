@@ -11,6 +11,7 @@
 
 }
 
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -186,3 +187,24 @@ h3 {
     width: 100%;
     height: 100%;
 }
+
+.img-contenedor img {
+    -webkit-transition:all .9s ease;
+    -moz-transition:all .9s ease;
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width:100%;
+    }
+    .img-contenedor:hover img {
+    -webkit-transform:scale(1.06);
+    -moz-transform:scale(1.06);
+    -ms-transform:scale(1.06);
+    -o-transform:scale(1.06);
+    transform:scale(1.06);
+    }
+    .img-contenedor {
+    width:100%;
+    height:100%;
+    }
+
+/** Nosotros **/
