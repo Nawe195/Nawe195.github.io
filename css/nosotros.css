@@ -1,0 +1,60 @@
+:root {
+    --negro: #131313;
+    --violetaoscuro: #34005e;
+    --violetaclaro: #5900a1;
+    --blanco: #fff;
+    --gris: #2b2b2b;
+    --grisoscuro: #1f1f1f;
+    --blancooscuro: #656565;
+
+    --fuenteprincipal: 'Montserrat', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--negro) ;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: 'Klee One', cursive;
+    color: var(--blanco);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--blanco);
+    font-family: var(--fuenteprincipal);
+
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}

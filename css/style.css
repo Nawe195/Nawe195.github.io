@@ -47,7 +47,6 @@ h1, h2, h3 {
     text-align: center;
     color: var(--blanco);
     font-family: var(--fuenteprincipal);
-    font-weight: bold;
 
 }
 h1 {
@@ -208,3 +207,13 @@ h3 {
     }
 
 /** Nosotros **/
+
+.nosotros {
+
+}
+.nosotros__contenido {
+
+}
+.nosotros__imagen {
+    
+}
