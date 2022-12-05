@@ -209,11 +209,22 @@ h3 {
 /** Nosotros **/
 
 .nosotros {
-
+    display: grid;
+    grid-template-rows: repeat(2, auto);
 }
-.nosotros__contenido {
-
+@media (min-width:768px) { 
+    .nosotros {
+        grid-template-columns: repeat(2, 1fr);   
+        column-gap: 2rem;
+    }
 }
-.nosotros__imagen {
-    
+
+.nosotros__img {
+    grid-row: 1 / 2;
+    width: 100%;
+}
+@media (min-width:768px) { 
+    .nosotros__img {
+        grid-column: 2 / 3;
+    }
 }
