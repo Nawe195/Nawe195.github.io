@@ -270,19 +270,25 @@ h3 {
 }
 
 .hoodie__imagen {
-    max-width: 100%;
+    max-width: 50%;
     border-radius: 1rem;
 }
 
-
-
-.formulario {
-
+.trolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
 }
-.formulario__campo {
-
-}
-
-.formulario__submit {
-
+.trolo::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    width: 50%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
 }
