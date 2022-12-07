@@ -277,7 +277,6 @@ h3 {
 @media (min-width:768px) { 
     .trolo {
         display: flex;
-    
         position: relative;
         
     }
